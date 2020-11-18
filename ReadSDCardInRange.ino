@@ -1,3 +1,4 @@
+
 String readFromSD(String FileName, char PinStartPoint[], char PinEndPoint[]) {
   //String FileName - name of File, String PinStartPoint - keyword from where to start
   //String PinEndPoint - keyword where to end
