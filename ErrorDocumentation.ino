@@ -1,3 +1,6 @@
+void Error(String errorMessage, bool SDWrite = true); //call at start of programm to enable optional var
+
+
 void Error(String errorMessage, bool SDWrite) {
   //String errorMessage - message to be send to Serial device and written on SD Card,
   //optional bool SDWrite - write on SD
