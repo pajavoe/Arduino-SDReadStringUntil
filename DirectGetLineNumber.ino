@@ -17,19 +17,7 @@ unsigned int getLineNumbers(File myFile) {
 }
 
 
-unsigned int getSetLineNumbers(File myFile, int lengthLine) {//if line lnegth is known
+unsigned int getSetLineNumbers(File myFile, int lengthLine) {//if line length is known
   //not Tested!
-  unsigned int lineNumbers = 0;
-  bool linePresent = true;
-  while (linePresent) {
-    linePresent = myFile.seek(lineNumbers); //seeks through file until not available
-    if (linePresent) {
-      lineNumbers++;
-    }
-    else {
-      linePresent = false;
-    }
-  }
-  lineNumbers /= lengthLine;
-  return lineNumbers;
+  return myFile.seek(myFile.size())/lengthLine;
 }
