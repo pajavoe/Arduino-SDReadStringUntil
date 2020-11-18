@@ -2,7 +2,7 @@ String findCharacters(char toFind[], File myFile) {
   //returns the String read from start till given end-string
   String returnString = "";
   boolean readBuf = true;
-  char cr ; 
+  char cr ;
   int pos = 0;
   while (readBuf) {
     cr = myFile.read();
@@ -11,7 +11,7 @@ String findCharacters(char toFind[], File myFile) {
       if (pos == sizeof(toFind)) {
         readBuf = false;
       }
-      pos++; // jump to next character
+      pos++; // jumps to next character
     }
     else {
       pos = 0;//reset if not found
