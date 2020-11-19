@@ -37,6 +37,6 @@ String getSetlineAt(unsigned int lineNumber, File myFile, int lengthLine) {
 
 /* Call like following:
 File myFile;
-  myFile = SD.open("ErrorC.txt"); //open file in read mode
-  Serial.println(printLineN(41, myFile));
+  myFile = SD.open("text.txt"); //open file in read mode
+  Serial.println(getLineAt(41, myFile));
   */
