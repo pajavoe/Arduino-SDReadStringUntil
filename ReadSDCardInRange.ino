@@ -37,13 +37,16 @@ String findCharacters(char toFind[], File myFile) {
     cr = myFile.read();
     returnString += cr;
     if (cr ==  toFind[pos]) { //check if in serched array
-      if (pos ==  strlen(toFind)-1) {
+      if (pos == strlen(toFind) - 1) {
         readBuf = false;
       }
       pos++; // jumps to next character
     }
     else {
       pos = 0;//reset if not found
+    }
+    if (cr ==  toFind) {
+      readBuf = false;
     }
   }
   return returnString;
