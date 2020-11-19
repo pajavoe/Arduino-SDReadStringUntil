@@ -55,7 +55,6 @@ void WriteReplaceFromSD(String replaceString, String FileName, char PinStartPoin
     }
     count++;
   }
-  Serial.println(getCharactersFromEnd(20, myFile));
   myFile.close(); // close the file
   myFile = SD.open(FileName, (O_READ | O_WRITE)); //open file type in write mod
   myFile.seek(seekCounter);
