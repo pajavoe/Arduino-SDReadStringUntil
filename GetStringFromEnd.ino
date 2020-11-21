@@ -21,7 +21,7 @@ String getLineFromEnd(unsigned int LineFromEnd, File myFile) {//prefered Way(no 
     }
     countCharacter++;
   }
-  for (int i = 0; i < reverseRead.length(); i++) { //unreverse the read input
+  for (int i = 0; i < reverseRead.length()-1; i++) { //unreverse the read input
     output += reverseRead[reverseRead.length() - i];
   }
   return output;
